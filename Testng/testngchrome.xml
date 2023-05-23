@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Salesforce">
+<!-- BeforeTest-->
+<!-- groups>
+    <run>
+    <include name="smoke1"/>
+    </run>
+
+</groups --> 
+
+<parameter name="username" value= "Suhani"> </parameter>
+<listeners>
+<listener class-name="com.training.listeners.TestListener"></listener>
+</listeners>
+
+<test name="Random">
+  <classes>
+    <class name="com.training.testcase.RandomScenariosTest"/>
+   </classes>
+</test>
+</suite>
+ 
